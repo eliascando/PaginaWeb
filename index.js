@@ -9,6 +9,11 @@ function actualizarContador() {
   document.getElementById('contador-visitas').innerHTML = visitas;
   localStorage.setItem('visitas', visitas.toString());
 }
+function actualizarValorContador() {
+  var visitas = parseInt(localStorage.getItem('visitas')) || 0;
+  document.getElementById('contador-visitas').innerHTML = visitas;
+}
+setInterval(actualizarValorContador,1000);
 
 function actualizarReloj() {
   var reloj = document.getElementById('reloj');
