@@ -2,12 +2,22 @@
 	<meta charset="UFT-8">
 	<title>PaginaWeb</title>
 	<link rel="stylesheet" href="index.css">
-	<script src="index.js"></script>
-<body>
-	<h1>CREADO DESDE LA TERMINAL Y EL NOTEPAD</h1>
-	<p>ESTE ES UN TEXTO DE EJEMPLO EN LA ETIQUETA DE PARRAFO <strong>NEGRITA</strong> Y ASI como
-	<a href="#" onclick="confirmarSalida()" class="btn-campus">Ir al Campus Virtual</a>
-	<p>Esta página ha sido visitada <span id="contador-visitas"></span> veces.</p>
-	<footer>PIE DE PAGINA</footer>
+	<script typ="model" src="index.js"></script>
+<body onload="actualizarContador()">
+	<header class="head">
+		<h1>Página de Prueba</h1>
+	</header>
+
+	<main class="content">
+		<div class="parrafo">
+			<p>Uso de JavaScript en el boton, el contador de visitas y el reloj digital</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas temporibus maxime fuga voluptatum deleniti perferendis, laboriosam facere rerum beatae eos possimus magnam laborum quo dolorum blanditiis esse amet omnis nesciunt?</p>
+		</div>
+		<div class="boton"><a href="#" onclick="confirmarSalida()" class="btn-campus">Video Random</a></div>
+		<div class="contador"><p>Esta página ha sido visitada <span id="contador-visitas"></span> veces.</div>
+		<div id="reloj"></div>
+	</main>
+	
+	<footer>&copy;Elías Cando 2023 🐱</footer>
 </body>
 </html>
